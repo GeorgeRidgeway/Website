@@ -1,5 +1,5 @@
 
-
+ 
 let countElStrikes = document.getElementById("count-el-strikes")
 
 let countElBalls = document.getElementById("count-el-balls")
