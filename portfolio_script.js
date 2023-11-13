@@ -1,5 +1,5 @@
+//document.getElementById("count-el").innerText = 6
 
- 
 let countElStrikes = document.getElementById("count-el-strikes")
 
 let countElBalls = document.getElementById("count-el-balls")
@@ -56,7 +56,7 @@ function balls() {
 }
 
 function save(){
-	result = countElBatter.innerText
+result = countElBatter.innerText
 	if ( result == "Walk" || result == "Out" ) {
     countElResult.innerText += result + " - "
     countStrikes = 0;
@@ -70,8 +70,8 @@ function save(){
 
 
 function reset() {
-	countStrikes = 0;
-	countBalls = 0;
+  countStrikes = 0;
+  countBalls = 0;
   countElResult.innerText = " ";
   document.getElementById("count-el-strikes").innerHTML = countStrikes; 
   document.getElementById("count-el-balls").innerHTML = countBalls;
