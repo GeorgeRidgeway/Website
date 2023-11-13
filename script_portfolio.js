@@ -1,18 +1,18 @@
 
 
-let countElStrikes = document.getElementById("count-el-strikes")
+var countElStrikes = document.getElementById("count-el-strikes")
 
-let countElBalls = document.getElementById("count-el-balls")
+var countElBalls = document.getElementById("count-el-balls")
 
-let countElBatter = document.getElementById("count-el-batter")
+var countElBatter = document.getElementById("count-el-batter")
 
-let countElResult = document.getElementById("count-el-previous")
+var countElResult = document.getElementById("count-el-previous")
 
-let countStrikes = 0
+var countStrikes = 0
 
-let countBalls = 0
+var countBalls = 0
 
-let count = 0
+var count = 0
 
 
 function strikes() {
