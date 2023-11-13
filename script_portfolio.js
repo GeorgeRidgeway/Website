@@ -1,4 +1,4 @@
-//document.getElementById("count-el").innerText = 6
+
 
 let countElStrikes = document.getElementById("count-el-strikes")
 
