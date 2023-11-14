@@ -47,7 +47,7 @@ function balls() {
 
 function save(){
 	
-	result = countElBatter.textContent;
+	result = countElBatter.innerText;
 	if ( result == "Walk" || result == "Out" ) {
     		countElResult.textContent += result + " - ";
     		countStrikes = 0;
@@ -64,7 +64,7 @@ function reset() {
 	
   	countStrikes = 0;
   	countBalls = 0;
-  	countElResult.innerText = " ";
+  	countElResult.innerText = " - ";
   	document.getElementById("count-el-strikes").innerHTML = countStrikes; 
   	document.getElementById("count-el-balls").innerHTML = countBalls;
   	countElBatter.innerText = "";
