@@ -16,9 +16,9 @@ var count = 0;
 
 
 function strikes() {
-	if (countElBatter.innerText !== "Walk") {
-  		countStrikes += 1;
-  		countElStrikes.innerText = countStrikes;
+	// if (countElBatter.innerText !== "Walk") {
+ //  		countStrikes += 1;
+ //  		countElStrikes.innerText = countStrikes;
 	}
   	if (countStrikes == 3) {
   		countElBatter.innerText = "Out";
@@ -33,9 +33,9 @@ function strikes() {
 } 
 
 function balls() {
-	if (countElBatter.innerText !== "Out") {
-		countBalls += 1;
-		countElBalls.innerText = countBalls;
+	// if (countElBatter.innerText !== "Out") {
+	// 	countBalls += 1;
+	// 	countElBalls.innerText = countBalls;
 	}
   	if (countBalls == 4) {
   		countElBatter.innerText = "Walk";
