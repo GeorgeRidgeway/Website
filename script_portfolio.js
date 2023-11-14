@@ -16,10 +16,7 @@ var count = 0;
 
 
 function strikes() {
-	// if (countElBatter.innerText !== "Walk") {
- //  		countStrikes += 1;
- //  		countElStrikes.innerText = countStrikes;
-	// }
+	console.log("Test")
   	if (countStrikes == 3) {
   		countElBatter.innerText = "Out";
 	}
@@ -33,10 +30,7 @@ function strikes() {
 } 
 
 function balls() {
-	// if (countElBatter.innerText !== "Out") {
-	// 	countBalls += 1;
-	// 	countElBalls.innerText = countBalls;
-	// }
+	console.log("Test")
   	if (countBalls == 4) {
   		countElBatter.innerText = "Walk";
  	}
@@ -50,6 +44,7 @@ function balls() {
 }
 
 function save(){
+	console.log("Test")
 	result = countElBatter.innerText;
 	if ( result == "Walk" || result == "Out" ) {
     		countElResult.innerText += result + " - ";
@@ -63,10 +58,11 @@ function save(){
 
 
 function reset() {
-  countStrikes = 0;
-  countBalls = 0;
-  countElResult.innerText = " ";
-  document.getElementById("count-el-strikes").innerHTML = countStrikes; 
-  document.getElementById("count-el-balls").innerHTML = countBalls;
-  countElBatter.innerText = "";
+	console.log("Test")
+  	countStrikes = 0;
+  	countBalls = 0;
+  	countElResult.innerText = " ";
+  	document.getElementById("count-el-strikes").innerHTML = countStrikes; 
+  	document.getElementById("count-el-balls").innerHTML = countBalls;
+  	countElBatter.innerText = "";
 }
