@@ -27,7 +27,7 @@ function strikes() {
     		document.getElementById("count-el-balls").innerHTML = countBalls; 
     		countElBatter.textContent = "";
    	}
-	console.log("Test")
+	console.log("countStrikes")
 } 
 
 function balls() {
@@ -42,7 +42,7 @@ function balls() {
   		document.getElementById("count-el-balls").innerHTML = countBalls; 
     		countElBatter.innerText = "";
 	}
-	console.log("Test")
+	console.log("countBalls")
 }
 
 function save(){
@@ -56,7 +56,7 @@ function save(){
   		document.getElementById("count-el-balls").innerHTML = countBalls;
   		countElBatter.innerText = "";
   	}
-	console.log("Test")
+	console.log("result")
 }
 
 
@@ -68,5 +68,5 @@ function reset() {
   	document.getElementById("count-el-strikes").innerHTML = countStrikes; 
   	document.getElementById("count-el-balls").innerHTML = countBalls;
   	countElBatter.innerText = "";
-	console.log("Test")
+	console.log("countStrikes")
 }
