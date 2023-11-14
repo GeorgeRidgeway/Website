@@ -40,7 +40,7 @@ function balls() {
 		countBalls = 0;
   		document.getElementById("count-el-strikes").innerHTML = countStrikes; 
   		document.getElementById("count-el-balls").innerHTML = countBalls; 
-    		countElBatter.textContent = "";
+    		countElBatter.innerText = "";
 	}
 	console.log("Test")
 }
@@ -64,7 +64,7 @@ function reset() {
 	
   	countStrikes = 0;
   	countBalls = 0;
-  	countElResult.textContent = " ";
+  	countElResult.innerText = " ";
   	document.getElementById("count-el-strikes").innerHTML = countStrikes; 
   	document.getElementById("count-el-balls").innerHTML = countBalls;
   	countElBatter.innerText = "";
