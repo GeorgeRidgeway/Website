@@ -16,53 +16,57 @@ var count = 0;
 
 
 function strikes() {
-	console.log("Test")
+	
   	if (countStrikes == 3) {
-  		countElBatter.innerText = "Out";
+  		countElBatter.textContent = "Out";
 	}
 	if(countStrikes >= 4) {
     		countStrikes = 0;
     		countBalls = 0;
     		document.getElementById("count-el-strikes").innerHTML = countStrikes; 
     		document.getElementById("count-el-balls").innerHTML = countBalls; 
-    		countElBatter.innerText = "";
+    		countElBatter.textContent = "";
    	}
+	console.log("Test")
 } 
 
 function balls() {
-	console.log("Test")
+	
   	if (countBalls == 4) {
-  		countElBatter.innerText = "Walk";
+  		countElBatter.textContent = "Walk";
  	}
   	if(countBalls >= 5) {
   		countStrikes = 0;
 		countBalls = 0;
   		document.getElementById("count-el-strikes").innerHTML = countStrikes; 
   		document.getElementById("count-el-balls").innerHTML = countBalls; 
-    		countElBatter.innerText = "";
+    		countElBatter.textContent = "";
 	}
+	console.log("Test")
 }
 
 function save(){
-	console.log("Test")
-	result = countElBatter.innerText;
+	
+	result = countElBatter.textContent;
 	if ( result == "Walk" || result == "Out" ) {
-    		countElResult.innerText += result + " - ";
+    		countElResult.textContent += result + " - ";
     		countStrikes = 0;
 		countBalls = 0;
   		document.getElementById("count-el-strikes").innerHTML = countStrikes; 
   		document.getElementById("count-el-balls").innerHTML = countBalls;
   		countElBatter.innerText = "";
   	}
+	console.log("Test")
 }
 
 
 function reset() {
-	console.log("Test")
+	
   	countStrikes = 0;
   	countBalls = 0;
-  	countElResult.innerText = " ";
+  	countElResult.textContent = " ";
   	document.getElementById("count-el-strikes").innerHTML = countStrikes; 
   	document.getElementById("count-el-balls").innerHTML = countBalls;
   	countElBatter.innerText = "";
+	console.log("Test")
 }
