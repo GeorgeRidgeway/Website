@@ -70,22 +70,32 @@
       <div id="background-image" style="background-image: url('https://media.istockphoto.com/id/1389744315/vector/vector-baseball-field-baseball-diamond-baseball-stadium-stock-illustration.jpg?s=612x612&w=0&k=20&c=36T0kBfFAWRRkj4OMAzLYdOX0ulMKbjIh18Q3wZzs48=');  ">
 
     <h1 style="font-size:30pt;">Pitch Counter</h1>
+ 
     
-    <div id="baseball-content" style="text-align:center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-      <h2 style=' margin:0;text-align:center;'>Strikes: <span id="count-el-strikes">0</span></h2>
-      <h2 style=' margin:0;text-align:center;'>Balls: <span id="count-el-balls">0</span></h2>
-      <h2 style=' margin:0;text-align:center;'>Batter: <span id="count-el-batter">-</span></h2>
+    
+    
+    <div id="baseball-content" style="align-text:center;">
+      <h2 style=' margin:0;'>Strikes: <span id="count-el-strikes"></span></h2>
+      <h2 style=' margin:0;'>Balls: <span id="count-el-balls"></span></h2>
+      <h2 style=' margin:0;'>Batter: <span id="count-el-batter"></span></h2>
     </div>
+
     <br>   
-    <button id="strikes-btn" onclick="strikes()">Strikes</button>
-    <button id="balls-btn" onclick="balls()">Balls</button>
-    <br>
-    <!-- <button id="reset-btn" onclick="reset()">Reset Count</button> -->
-    <button id="save-btn" onclick="save()">Save and Reset Count</button>
-    <button id="reset-btn" onclick="reset()">Reset Results</button>
-    <br>
+ <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div style="margin: 5px;">
+      <button id="strikes-btn" onclick="strikes()">Strikes</button>
+    </div>
+    <div style="margin: 5px;">
+      <button id="balls-btn" onclick="balls()">Balls</button>
+    </div>
+    <div style="margin: 5px;">
+      <button id="save-btn" onclick="save()">Save and Reset Count</button>
+    </div>
+    <div style="margin: 5px;">
+      <button id="reset-btn" onclick="reset()">Reset Results</button>
+    </div>
     <h2 id="result-content" style="font-size:18pt;">Previous Result: <span id="count-el-previous"></span></h2>
-    <br>
+  </div>
     </div>
     <br>
     </div>
