@@ -19,57 +19,56 @@ function strikes() {
   console.log(countElStrikes.innerText)
   if (countStrikes == 3) {
   	countElBatter.innerText = "Out"
- 		console.log("Out") 
-	}
-	if(countStrikes >= 4) {
-    countStrikes = 0;
-    countBalls = 0;
-    document.getElementById("count-el-strikes").innerHTML = countStrikes; 
-    document.getElementById("count-el-balls").innerHTML = countBalls; 
-    countElBatter.innerText = ""
-    console.log("Out")
-    }
+ 	console.log("Out") 
+  }
+  if(countStrikes >= 4) {
+    	countStrikes = 0;
+    	countBalls = 0;
+    	document.getElementById("count-el-strikes").innerHTML = countStrikes; 
+    	document.getElementById("count-el-balls").innerHTML = countBalls; 
+    	countElBatter.innerText = ""
+    	console.log("Out")
+  }
 } 
 
 function balls() {
-	
-		countBalls += 1;
-		countElBalls.innerText = countBalls
-  	console.log(countElBalls.innerText)
+  countBalls += 1;
+  countElBalls.innerText = countBalls
+  console.log(countElBalls.innerText)
   if (countBalls == 4) {
   	countElBatter.innerText = "Walk"
- 		console.log("Walk")
-	}
+ 	console.log("Walk")
+  }
   if(countBalls >= 5) {
   	countStrikes = 0;
-		countBalls = 0;
+	countBalls = 0;
   	document.getElementById("count-el-strikes").innerHTML = countStrikes; 
   	document.getElementById("count-el-balls").innerHTML = countBalls; 
-    countElBatter.innerText = ""
- 		console.log("Out")
-	}
+    	countElBatter.innerText = ""
+ 	console.log("Out")
+  }
 }
 
 function save() {
-	result = countElBatter.innerText
-	if ( result == "Walk" || result == "Out" ) {
-    countElResult.textContent += result + " - "
-    countStrikes = 0;
-		countBalls = 0;
+  result = countElBatter.innerText
+  if ( result == "Walk" || result == "Out" ) {
+	countElResult.textContent += result + " - "
+	countStrikes = 0;
+	countBalls = 0;
   	document.getElementById("count-el-strikes").innerHTML = countStrikes; 
   	document.getElementById("count-el-balls").innerHTML = countBalls;
   	countElBatter.innerText = ""
-		console.log("Out")
+	console.log("Out")
   }
 }
 
 
 function reset() {
-	countStrikes = 0;
-	countBalls = 0;
+  countStrikes = 0;
+  countBalls = 0;
   countElResult.innerText = " ";
   document.getElementById("count-el-strikes").innerHTML = countStrikes; 
   document.getElementById("count-el-balls").innerHTML = countBalls;
   countElBatter.innerText = ""
-	console.log("Out")
+  console.log("Out")
 }
