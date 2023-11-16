@@ -165,7 +165,8 @@ div.footer {
   height: 415px;
   
   @media screen and (max-width: 900px) {
-     width: auto;
+     width: 90%;
+     padding: 2%;
      height: auto;
     }
 }
