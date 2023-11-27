@@ -122,3 +122,15 @@ div.footer {
   border-spacing: 10px;
   width: 100%;
 }
+
+.table-dates{
+  text-align:right;
+  width: 30%;
+}
+
+.table-list{
+  margin-top:0px; 
+  text-align:justify;
+}
+
+
