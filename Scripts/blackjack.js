@@ -42,18 +42,18 @@ function wager() {
       	alert("Cannot wager more than is in the bank!");
         return;
       }
-  		if (firstCardPlayer >= 1) {
+      if (firstCardPlayer >= 1) {
         alert("Additional wagers are not allowed.");
         inputElement.value = "";
         return;
       }
-			if (!isNaN(inputWager)) {
+      if (!isNaN(inputWager)) {
         totalWager += inputWager;
         currentBankRoll -= inputWager
         inputElement.placeholder = "You entered: $" + totalWager;
       }
       if (totalWager == 0){
-      	alert("place wager")
+      	alert("place wager");
       }
       	else {
       	inputElement.value = "";
@@ -102,7 +102,7 @@ let sumPlayer = 0;
 function deal() {  
 
 	if (totalWager == 0){
-  	alert("place wager")
+  	alert("place wager");
     
   }
   else {
@@ -110,7 +110,7 @@ function deal() {
 	firstCardPlayer = Math.floor(Math.random() * 10) + 2;
   
   switch (firstCardPlayer){
-		case 2: replacePlayer(2, "https://upload.wikimedia.org/wikipedia/commons/4/42/2_of_clubs.svg");
+    case 2: replacePlayer(2, "https://upload.wikimedia.org/wikipedia/commons/4/42/2_of_clubs.svg");
       break;  
     case 3: replacePlayer(2, "https://upload.wikimedia.org/wikipedia/commons/4/4d/3_of_clubs.svg");
       break;  
@@ -134,7 +134,7 @@ function deal() {
   secondCardPlayer = Math.floor(Math.random() * 10) + 2; 
   
   switch (secondCardPlayer){
-		case 2: replacePlayer(3, "https://upload.wikimedia.org/wikipedia/commons/4/42/2_of_clubs.svg");
+    case 2: replacePlayer(3, "https://upload.wikimedia.org/wikipedia/commons/4/42/2_of_clubs.svg");
       break;  
     case 3: replacePlayer(3, "https://upload.wikimedia.org/wikipedia/commons/4/4d/3_of_clubs.svg");
       break;  
@@ -159,7 +159,7 @@ function deal() {
   firstCardDealer = Math.floor(Math.random() * 10) + 2;
   
   switch (firstCardDealer){
-		case 2: replaceDealer(2, "https://upload.wikimedia.org/wikipedia/commons/4/42/2_of_clubs.svg");
+   case 2: replaceDealer(2, "https://upload.wikimedia.org/wikipedia/commons/4/42/2_of_clubs.svg");
       break;  
     case 3: replaceDealer(2, "https://upload.wikimedia.org/wikipedia/commons/4/4d/3_of_clubs.svg");
       break;  
@@ -220,11 +220,11 @@ function deal() {
 	console.log("Player", sumPlayer)
   
   if (sumDealer === 21 && sumPlayer == 21){
-  	winnerHand.innerText = "Push"
-    loser.innerText = ""
-    masterBankRoll.innerText = currentBankRoll + (totalWager)
-    currentBankRoll = currentBankRoll + (totalWager)
-  	console.log('Push')
+    winnerHand.innerText = "Push";
+    loser.innerText = "";
+    masterBankRoll.innerText = currentBankRoll + (totalWager);
+    currentBankRoll = currentBankRoll + (totalWager);
+  	console.log('Push');
     switch (secondCardDealer){
 		case 2: replaceDealer(3, "https://upload.wikimedia.org/wikipedia/commons/4/42/2_of_clubs.svg");
       break;  
@@ -249,8 +249,8 @@ function deal() {
   }
   
   else if (sumDealer === 21){
-  	winnerHand.innerText = "Dealer"
-    loser.innerText = "Player"
+  	winnerHand.innerText = "Dealer";
+    loser.innerText = "Player";
     switch (secondCardDealer){
 		case 2: replaceDealer(3, "https://upload.wikimedia.org/wikipedia/commons/4/42/2_of_clubs.svg");
       break;  
@@ -274,10 +274,10 @@ function deal() {
     }
   } 
   else if (sumPlayer == 21){
-  	winnerHand.innerText = "Player"
-    loser.innerText = "Dealer"
-    masterBankRoll.innerText = currentBankRoll + (2*totalWager)
-    currentBankRoll = currentBankRoll + (2*totalWager)
+  	winnerHand.innerText = "Player";
+    loser.innerText = "Dealer";
+    masterBankRoll.innerText = currentBankRoll + (2*totalWager);
+    currentBankRoll = currentBankRoll + (2*totalWager);
     switch (secondCardDealer){
 		case 2: replaceDealer(3, "https://upload.wikimedia.org/wikipedia/commons/4/42/2_of_clubs.svg");
       break;  
@@ -341,14 +341,14 @@ function hit() {
   
   totalValuePlayer += playerHit;
   
-  newSumPlayer = sumPlayer + totalValuePlayer
+  newSumPlayer = sumPlayer + totalValuePlayer;
   console.log("newSumPlayer", newSumPlayer);
   
   
   if (newSumPlayer > 21){
-  	winnerHand.innerText = "Dealer"
-    loser.innerText = "Player"
-    console.log('Player Bust')
+  	winnerHand.innerText = "Dealer";
+    loser.innerText = "Player";
+    console.log('Player Bust');
     switch (secondCardDealer){
 		case 2: replaceDealer(3, "https://upload.wikimedia.org/wikipedia/commons/4/42/2_of_clubs.svg");
       break;  
@@ -374,37 +374,37 @@ function hit() {
   /*
   else if (newSumPlayer === 21){
     if (newSumDealer === 21){
-    	winnerHand.innerText = "Push"
-      masterBankRoll.innerText = currentBankRoll + totalWager
-    	console.log('Push')
+    	winnerHand.innerText = "Push";
+      masterBankRoll.innerText = currentBankRoll + totalWager;
+    	console.log('Push');
     }
     else if (newSumDealer > newSumPlayer){
-    	winnerHand.innerText = "Player"
-      masterBankRoll.innerText = currentBankRoll + (2*totalWager)
-    	currentBankRoll = currentBankRoll + (2*totalWager)
-    	console.log('Player')
+    	winnerHand.innerText = "Player";
+      masterBankRoll.innerText = currentBankRoll + (2*totalWager);
+    	currentBankRoll = currentBankRoll + (2*totalWager);
+    	console.log('Player');
     }
     else if (newSumPlayer > newSumDealer){
-    	winnerHand.innerText = "Player"
-      masterBankRoll.innerText = currentBankRoll + (2*totalWager)
-    	currentBankRoll = currentBankRoll + (2*totalWager)
-    	console.log('Player')
+    	winnerHand.innerText = "Player";
+      masterBankRoll.innerText = currentBankRoll + (2*totalWager);
+    	currentBankRoll = currentBankRoll + (2*totalWager);
+    	console.log('Player');
     }
   }
   else if (newSumPlayer < 21){
     if (newSumDealer === 21){
-    	winnerHand.innerText = "Dealer"
-      console.log('Dealer')
+    	winnerHand.innerText = "Dealer";
+      console.log('Dealer');
     }
     else if (newSumDealer > newSumPlayer && newSumDealer < 21){
-    	winnerHand.innerText = "Dealer"
-    	console.log('Dealer')
+    	winnerHand.innerText = "Dealer";
+    	console.log('Dealer');
     }
     else if (newSumPlayer > newSumDealer && newSumDealer < 21){
-    	winnerHand.innerText = "Player"
-      masterBankRoll.innerText = currentBankRoll + (2*totalWager)
-    	currentBankRoll = currentBankRoll + (2*totalWager)
-    	console.log('Player')
+    	winnerHand.innerText = "Player";
+      masterBankRoll.innerText = currentBankRoll + (2*totalWager);
+    	currentBankRoll = currentBankRoll + (2*totalWager);
+    	console.log('Player');
     }
   }
   */
@@ -435,35 +435,35 @@ function stand() {
     case 11: replaceDealer(3, "https://upload.wikimedia.org/wikipedia/commons/f/f4/Ace_of_spades2.svg");
     }
   if (newSumDealer === 21){
-  	winnerHand.innerText = "Dealer"
-    loser.innerText = "Player"
-    console.log('Dealer')
+  	winnerHand.innerText = "Dealer";
+    loser.innerText = "Player";
+    console.log('Dealer');
   }
   else if (newSumDealer == newSumPlayer || newSumDealer == sumPlayer){
-  	winnerHand.innerText = "Push"
-    loser.innerText = "" 
-    masterBankRoll.innerText = currentBankRoll + (totalWager)
-    currentBankRoll = currentBankRoll + (totalWager)
-  	console.log('Push')
+  	winnerHand.innerText = "Push";
+    loser.innerText = "";
+    masterBankRoll.innerText = currentBankRoll + (totalWager);
+    currentBankRoll = currentBankRoll + (totalWager);
+  	console.log('Push');
   }
   else if (newSumDealer > 21){
   	winnerHand.innerText = "Player"
-    loser.innerText = "Dealer" 
-    masterBankRoll.innerText = currentBankRoll + (2*totalWager)
-    currentBankRoll = currentBankRoll + (2*totalWager)
-  	console.log('Player')
+    loser.innerText = "Dealer";
+    masterBankRoll.innerText = currentBankRoll + (2*totalWager);
+    currentBankRoll = currentBankRoll + (2*totalWager);
+  	console.log('Player');
   }
   else if (newSumPlayer > newSumDealer || sumPlayer > newSumDealer){
-  	winnerHand.innerText = "Player"
-    loser.innerText = "Dealer" 
-    masterBankRoll.innerText = currentBankRoll + (2*totalWager)
-    currentBankRoll = currentBankRoll + (2*totalWager)
-  	console.log('Player')
+  	winnerHand.innerText = "Player";
+    loser.innerText = "Dealer";
+    masterBankRoll.innerText = currentBankRoll + (2*totalWager);
+    currentBankRoll = currentBankRoll + (2*totalWager);
+  	console.log('Player');
   } 
   else if (newSumDealer > newSumPlayer || newSumDealer > sumPlayer){
-  	winnerHand.innerText = "Dealer" 
-    loser.innerText = "Player" 
-  	console.log('Dealer')
+  	winnerHand.innerText = "Dealer"; 
+    loser.innerText = "Player";
+  	console.log('Dealer');
   }
 }
 
@@ -495,7 +495,7 @@ function hitDealer() {
     case 11: replaceDealer(3, "https://upload.wikimedia.org/wikipedia/commons/f/f4/Ace_of_spades2.svg");
     }
 		let newCardDealer = Math.floor(Math.random() * 10) + 2;
-    console.log('newCardDealer',newCardDealer)
+    console.log('newCardDealer',newCardDealer);
     switch (newCardDealer){
 		case 2: replaceDealer(hitCountDealer, "https://upload.wikimedia.org/wikipedia/commons/4/42/2_of_clubs.svg");
       break;  
@@ -520,7 +520,7 @@ function hitDealer() {
     hitCountDealer++;
     dealerCards.push(newCardDealer);
     newSumDealer = sumDealer + dealerCards.reduce((sum, card) => sum + card, 0);
-    console.log("dealerSum",newSumDealer)
+    console.log("dealerSum",newSumDealer);
     if (newSumDealer >= 17) {
       break;
     }
@@ -530,21 +530,21 @@ function hitDealer() {
   }
   /*
   if (newSumDealer > 21) {
-  	winnerHand.innerText = "Player"
-    masterBankRoll.innerText = currentBankRoll + (2*totalWager)
-    currentBankRoll = currentBankRoll + (2*totalWager)
+  	winnerHand.innerText = "Player";
+    masterBankRoll.innerText = currentBankRoll + (2*totalWager);
+    currentBankRoll = currentBankRoll + (2*totalWager);
   }
   */
 }
 
 function reset() {  
-	firstCardPlayer = 0
-  secondCardPlayer = 0
-  firstCardDealer = 0
-  secondCardDealer = 0
+	firstCardPlayer = 0;
+  secondCardPlayer = 0;
+  firstCardDealer = 0;
+  secondCardDealer = 0;
   masterWager.innerText = 0;
-  totalWager = 0
-  inputWager = 0
+  totalWager = 0;
+  inputWager = 0;
   sumDealer = 0;
   newSumPlayer = 0;
   sumDealer = 0;
