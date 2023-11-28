@@ -320,6 +320,10 @@ div.table {
   display: none;
 }
 
+#blackjack-results-container{
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center;
 
 #blackjack-btn-container{
   display: flex; 
