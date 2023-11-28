@@ -537,7 +537,7 @@ function hitDealer() {
   */
 }
 
-function reset() {  
+function reset_blackjack() {  
 	firstCardPlayer = 0;
   secondCardPlayer = 0;
   firstCardDealer = 0;
