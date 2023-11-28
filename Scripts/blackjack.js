@@ -49,7 +49,7 @@ function wager() {
       }
       if (!isNaN(inputWager)) {
         totalWager += inputWager;
-        currentBankRoll -= inputWager
+        currentBankRoll -= inputWager;
         inputElement.placeholder = "You entered: $" + totalWager;
       }
       if (totalWager == 0){
