@@ -1,15 +1,4 @@
 
-/*
-let cardElFirstPlayer = document.getElementById("card-el-first-player")
-
-let cardElSecondPlayer = document.getElementById("card-el-second-player");
-
-let cardElFirstDealer = document.getElementById("card-el-first-dealer");
-
-let cardElSecondDealer = document.getElementById("card-el-second-dealer");
-
-*/
-
 let winnerHand = document.getElementById("el-winner");
 
 let loser = document.getElementById("el-loser");
@@ -203,13 +192,7 @@ function deal() {
     } */
   
   secondCardDealer = Math.floor(Math.random() * 10) + 2;
-  /*
-  cardElFirstPlayer.innerText = firstCardPlayer
-  cardElSecondPlayer.innerText = secondCardPlayer Math.floor(Math.random() * 10) + 2;
-  
-  cardElFirstDealer.innerText = firstCardDealer
-  cardElSecondDealer.innerText = secondCardDealer
-  */
+	  
   console.log(firstCardPlayer)
   console.log(secondCardPlayer)
   
@@ -371,43 +354,6 @@ function hit() {
     case 11: replaceDealer(3, "https://upload.wikimedia.org/wikipedia/commons/f/f4/Ace_of_spades2.svg");
     }
   }
-  /*
-  else if (newSumPlayer === 21){
-    if (newSumDealer === 21){
-    	winnerHand.innerText = "Push";
-      masterBankRoll.innerText = currentBankRoll + totalWager;
-    	console.log('Push');
-    }
-    else if (newSumDealer > newSumPlayer){
-    	winnerHand.innerText = "Player";
-      masterBankRoll.innerText = currentBankRoll + (2*totalWager);
-    	currentBankRoll = currentBankRoll + (2*totalWager);
-    	console.log('Player');
-    }
-    else if (newSumPlayer > newSumDealer){
-    	winnerHand.innerText = "Player";
-      masterBankRoll.innerText = currentBankRoll + (2*totalWager);
-    	currentBankRoll = currentBankRoll + (2*totalWager);
-    	console.log('Player');
-    }
-  }
-  else if (newSumPlayer < 21){
-    if (newSumDealer === 21){
-    	winnerHand.innerText = "Dealer";
-      console.log('Dealer');
-    }
-    else if (newSumDealer > newSumPlayer && newSumDealer < 21){
-    	winnerHand.innerText = "Dealer";
-    	console.log('Dealer');
-    }
-    else if (newSumPlayer > newSumDealer && newSumDealer < 21){
-    	winnerHand.innerText = "Player";
-      masterBankRoll.innerText = currentBankRoll + (2*totalWager);
-    	currentBankRoll = currentBankRoll + (2*totalWager);
-    	console.log('Player');
-    }
-  }
-  */
 }
 }
 
@@ -528,13 +474,7 @@ function hitDealer() {
   if (sumDealer >= 17){
   	newSumDealer = sumDealer;
   }
-  /*
-  if (newSumDealer > 21) {
-  	winnerHand.innerText = "Player";
-    masterBankRoll.innerText = currentBankRoll + (2*totalWager);
-    currentBankRoll = currentBankRoll + (2*totalWager);
-  }
-  */
+ 
 }
 
 function reset_blackjack() {  
@@ -557,18 +497,6 @@ function reset_blackjack() {
   dealerCards = [];
   cardNumber = ''; 
 	imageUrl = '';
-
-	/*
-	firstCardPlayer = 0;
-	secondCardPlayer = 0;
-	firstCardDealer = 0;
-	secondCardDealer = 0;
-	totalWager = 0;
-	sumDealer = 0;
-	sumPlayer = 0;
-	totalValuePlayer = 0;
-	newSumPlayer = 0;
-  */
   hitCountPlayer = 4;
 	hitCountDealer = 4;
   playerHit = "";
