@@ -1,0 +1,150 @@
+#player-cards{
+  height: 150px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  #player-cards{
+    width: auto;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+#dealer-cards{
+  height: 150px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  #dealer-cards{
+    width: auto;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+#playing-card-2{
+  height: 150px;
+  width: 200px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+#playing-card-3{
+  height: 150px;
+  width: 200px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+#playing-card-4{
+  height: 150px;
+  width: 200px;
+  border: none;
+  display: none;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+#playing-card-5{
+  height: 150px;
+  width: 200px;
+  border: none;
+  display: none;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+#playing-card-6{
+  height: 150px;
+  width: 200px;
+  border: none;
+  display: none;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+#dealers-card-2{
+  height: 150px;
+  width: 200px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+#dealers-card-3{
+  height: 150px;
+  width: 200px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+#dealers-card-4{
+  height: 150px;
+  width: 200px;
+  margin-left: -30px;
+  margin-right: -30px;
+  border: none;
+  display: none;
+}
+
+#dealers-card-5{
+  height: 150px;
+  width: 200px;
+  margin-left: -30px;
+  margin-right: -30px;
+  border: none;
+  display: none;
+}
+
+#dealers-card-6{
+  height: 150px;
+  width: 200px;
+  margin-left: -30px;
+  margin-right: -30px;
+  border: none;
+  display: none;
+}
+
+
+#blackjack-btn-container{
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center;
+  margin-bottom:75px;
+}
+
+.blackjack-btn{
+  background: white;
+  border: none;
+  padding-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  width: 100px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#el-wager-input{
+  width: 90px;
+  height: 20px;
+  margin: 5px;
+  padding-top: 10px;
+}
