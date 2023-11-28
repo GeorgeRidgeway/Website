@@ -1,5 +1,5 @@
 
-let winnerHand = document.getElementById("el-winner");
+/*let winnerHand = document.getElementById("el-winner");*/
 
 let loser = document.getElementById("el-loser");
 
