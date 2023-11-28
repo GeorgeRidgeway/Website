@@ -228,6 +228,94 @@
             <br>
         </div>
       </div>
+      
+    <div class="body-title">
+      
+      <b>Blackjack</b><br>
+      <hr>
+    </div>  
+    
+    <div class="body">
+
+      <div class="table">
+        <h1>House Rules:</h1>
+        <list style='justify:center; font-size:20px;'>
+          <b>Dealer hits on 16 <br>
+          Aces count as 11</b>
+        </list>
+
+        
+        <div style='display: grid; place-items: center;'>
+          <h2>Dealer Cards</h2>
+          
+       
+          <div id="dealer-cards">
+
+            <div>
+              <img id="dealers-card-2" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Card_back_01.svg" alt="">
+            </div>
+            <div>
+              <img id="dealers-card-3" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Card_back_01.svg" alt="">
+            </div> 
+            <div>
+              <img id="dealers-card-4" src="" alt="">
+            </div>  
+            <div>
+              <img id="dealers-card-5" src="" alt="">
+            </div> 
+            <div>
+              <img id="dealers-card-6" src="" alt="">
+            </div> 
+
+          </div>
+        
+        </div>
+     
+            
+        <div style='display: grid; place-items: center;'>
+          <h2>Player Cards</h2>
+        
+          <div id="player-cards">
+          
+            <div>
+              <img id="playing-card-2" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Card_back_01.svg" alt="">
+            </div>
+            <div>
+              <img id="playing-card-3" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Card_back_01.svg" alt="">
+            </div>  
+            <div>
+              <img id="playing-card-4" src="" alt="">
+            </div>
+            <div>
+              <img id="playing-card-5" src="" alt="">
+            </div>
+            <div>
+              <img id="playing-card-6" src="" alt="">
+            </div>
+            
+          </div>
+          <div>
+            <h3 class="el-winner">Winner: <span id="el-winner"></span></h3>
+            <h3 class="el-loser">Loser: <span id="el-loser"></span></h3>
+            <h3 class="el-wager">Wager: $<span id="el-wager"></span></h3>
+            <h3 class="el-bankroll">Bank: $<span id="el-bankroll"></span></h3>
+           </div>
+       </div>
+       
+       <br>
+       
+       <div id="blackjack-btn-container">
+        <input id="el-wager-input" type='number' placeholder="Enter Wager" onkeydown="checkEnter(event)">
+        <button class="blackjack-btn" onclick='wager()'>Wager</button>
+        <button class="blackjack-btn" onclick='deal()'>Deal</button>
+        <button class="blackjack-btn" onclick='hit()'>Hit</button>
+        <button class="blackjack-btn" onclick='stand()'>Stand</button>
+        <button class="blackjack-btn" onclick='reset()'>Reset</button>
+      </div>
+      </div>
+    </div>
+    <hr> 
+      
     </div>
 
     <hr>
