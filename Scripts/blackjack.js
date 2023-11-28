@@ -17,7 +17,7 @@ let secondCardPlayer;
 let firstCardDealer;
 let secondCardDealer;
 
-let totalWager = 0;
+let totalWager;
 
 function wager() {
 	var inputElement = document.getElementById("el-wager-input");
@@ -483,7 +483,7 @@ function reset_blackjack() {
   firstCardDealer = 0;
   secondCardDealer = 0;
   masterWager.innerText = 0;
-  totalWager = 0;
+  totalWager;
   inputWager = 0;
   sumDealer = 0;
   newSumPlayer = 0;
