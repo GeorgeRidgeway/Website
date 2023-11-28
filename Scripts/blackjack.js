@@ -1,11 +1,11 @@
 
-/*let winnerHand = document.getElementById("el-winner");*/
+let winnerHand = document.getElementById("el-winner")
 
-let loser = document.getElementById("el-loser");
+let loser = document.getElementById("el-loser")
 
-let masterWager = document.getElementById("el-wager");
+let masterWager = document.getElementById("el-wager")
 
-let masterBankRoll = document.getElementById("el-bankroll");
+let masterBankRoll = document.getElementById("el-bankroll")
 
 let currentBankRoll = 1000;
 
