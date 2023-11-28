@@ -17,7 +17,7 @@ let secondCardPlayer;
 let firstCardDealer;
 let secondCardDealer;
 
-let totalWager;
+let totalWager = 0;
 
 function wager() {
 	var inputElement = document.getElementById("el-wager-input");
