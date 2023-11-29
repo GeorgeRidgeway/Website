@@ -168,28 +168,6 @@ function deal() {
 			break;  
     case 11: replaceDealer(2, "https://upload.wikimedia.org/wikipedia/commons/f/f4/Ace_of_spades2.svg");
     }
-    
-/*   switch (firstCardDealer){
-		case 2: replaceDealer(4, "https://upload.wikimedia.org/wikipedia/commons/4/42/2_of_clubs.svg");
-      break;  
-    case 3: replaceDealer(4, "https://upload.wikimedia.org/wikipedia/commons/4/4d/3_of_clubs.svg");
-      break;  
-    case 4: replaceDealer(4, "https://upload.wikimedia.org/wikipedia/commons/b/b8/4_of_diamonds.svg");
-      break;  
-    case 5: replaceDealer(4, "https://upload.wikimedia.org/wikipedia/commons/8/8a/5_of_spades.svg");
-      break;  
-    case 6: replaceDealer(4, "https://upload.wikimedia.org/wikipedia/commons/7/7e/6_of_hearts.svg");
-      break;  
-    case 7: replaceDealer(4, "https://upload.wikimedia.org/wikipedia/commons/d/db/7_of_clubs.svg");
-      break;  
-    case 8: replaceDealer(4, "https://upload.wikimedia.org/wikipedia/commons/5/54/8_of_clubs.svg");
-      break;  
-    case 9: replaceDealer(4, "https://upload.wikimedia.org/wikipedia/commons/9/9d/9_of_hearts.svg");
-      break;  
-    case 10: replaceDealer(4, "https://upload.wikimedia.org/wikipedia/commons/6/68/10_of_spades.svg");
-			break;  
-    case 11: replaceDealer(4, "https://upload.wikimedia.org/wikipedia/commons/7/7b/Jack_of_clubs2.svg");
-    } */
   
   secondCardDealer = Math.floor(Math.random() * 10) + 2;
 	  
