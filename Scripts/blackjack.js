@@ -478,17 +478,17 @@ function hitDealer() {
 }
 
 function reset_blackjack() {  
-	firstCardPlayer = 0;
+  firstCardPlayer = 0;
   secondCardPlayer = 0;
   firstCardDealer = 0;
   secondCardDealer = 0;
   masterWager.innerText = 0;
-  totalWager;
+  totalWager = 0;
   inputWager = 0;
   sumDealer = 0;
   newSumPlayer = 0;
   sumDealer = 0;
-	sumPlayer = 0;
+  sumPlayer = 0;
   newCard = 0;
   totalValuePlayer = 0;
   winnerHand.innerText = "";
@@ -496,9 +496,9 @@ function reset_blackjack() {
   inputWager = [];
   dealerCards = [];
   cardNumber = ''; 
-	imageUrl = '';
+  imageUrl = '';
   hitCountPlayer = 4;
-	hitCountDealer = 4;
+  hitCountDealer = 4;
   playerHit = "";
   var originalImageUrl = "https://upload.wikimedia.org/wikipedia/commons/d/d4/Card_back_01.svg";
   replacePlayer(2, originalImageUrl);
